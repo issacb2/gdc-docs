@@ -3,6 +3,8 @@
 
 | Version | Date |
 |---|---|
+| [v1.17.0](API_Release_Notes.md#v1160) | November 7, 2018 |
+| [v1.16.0](API_Release_Notes.md#v1160) | September 27, 2018 |
 | [v1.15.0](API_Release_Notes.md#v1150) | August 23, 2018 |
 | [v1.14.1](API_Release_Notes.md#v1141) | May 21, 2018 |
 | [v1.14.0](API_Release_Notes.md#v1140) | April 23, 2018 |
@@ -19,6 +21,55 @@
 | [v1.2.0](API_Release_Notes.md#v120) | August 9, 2016 |
 | [v1.1.0](API_Release_Notes.md#v110) | May 25, 2016 |
 | [v1.0.1](API_Release_Notes.md#v101) | May 16, 2016 |
+
+## v1.17.0
+
+* __GDC Product__: Application Programming Interface (API)
+* __Release Date__:  November 7, 2018
+
+### New Features and Changes
+
+* Created new index cnv_centric <!--TT743-->
+* Created new index cnv_occurrence_centric <!--TT-744-->
+* Created new REST API endpoints for CNV <!--TT-757-->
+* Created mapping from aliquot to case for occurrence on cnv_centric <!--TT-762-->
+* Created new graphql endpoints for CNV <!--TT-769-->
+* Updated index case_centric to add cnv <!--TT-745-->
+* Updated index gene_centric to add cnv <!--TT-747-->
+
+### Bugs Fixed Since Last Release
+
+* Fixed bug to prevent users from deleting files in state submitted or released <!--API-560-->
+
+### Known Issues and Workarounds
+
+* Fields are not counted as missing if parent field is also missing.  This may occur with queries of nested fields in the Data Portal Advanced Search or an API query using a filter.  This behavior could impact results reported using search parameters of "IS MISSING" or "NOT MISSING". <!-- PGDC-2530 // https://github.com/NCI-GDC/gdcapi/pull/524  -->
+* Certain very large API requests will time out.  It is recommended to break up very large requests into a series of smaller requests. <!-- PGDC-2411 -->
+
+
+
+## v1.16.0
+
+* __GDC Product__: Application Programming Interface (API)
+* __Release Date__: September 27, 2018
+
+### New Features and Changes
+
+* Tissue_type is now parsed from the BCR Biospecimen submission <!--TT-753-->
+
+
+### Bugs Fixed Since Last Release
+
+* Re-attach the /files path to the legacy blueprints in gdcapi <!--SV-1195-->
+* Fix Internal Server Error when exporting JSON in Data Portal <!--SV-1209-->
+
+### Known Issues and Workarounds
+
+* Fields are not counted as missing if parent field is also missing.  This may occur with queries of nested fields in the Data Portal Advanced Search or an API query using a filter.  This behavior could impact results reported using search parameters of "IS MISSING" or "NOT MISSING". <!-- PGDC-2530 // https://github.com/NCI-GDC/gdcapi/pull/524  -->
+* Certain very large API requests will time out.  It is recommended to break up very large requests into a series of smaller requests. <!-- PGDC-2411 -->
+
+
+
 
 ## v1.15.0
 
