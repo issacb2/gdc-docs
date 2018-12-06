@@ -1,5 +1,6 @@
 # Data Upload Walkthrough
 
+
 This guide details step-by-step procedures for different aspects of the GDC Data Submission process and how they relate to the GDC Data Model and structure. The first sections of this guide break down the submission process and associate each step with the Data Model. Additional sections are detailed below for strategies on expediting data submission, using features of the GDC Data Submission Portal, and best practices used by the GDC.
 
 ## GDC Data Model Basics
@@ -490,7 +491,7 @@ submitted_aligned_reads	Blood-00001-aliquot_lane1_barcodeACGTAC_55.bam	Raw Seque
 
 ## Uploading the Submittable Data File to the GDC
 
-The submittable data file can be uploaded when it is registered with the GDC. An submittable data file is registered when its corresponding entity (e.g. `submitted_unaligned_reads`) is uploaded and committed. Uploading the file can be performed with either the [GDC Data Transfer Tool](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool) or the [GDC API](https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/). Other types of data files such as clinical supplements, biospecimen supplements, and pathology reports are uploaded to the GDC in the same way. Supported data file formats are listed at the GDC [Submitted Data Types and File Formats](https://gdc.cancer.gov/about-data/data-types-and-file-formats/submitted-data-types-and-file-formats) website.
+The submittable data file can be uploaded when it is registered with the GDC. An submittable data file is registered when its corresponding entity (e.g. `submitted_unaligned_reads`) is uploaded and committed. It is important to not that the Harmonization process does not occur on these submitted files until the user clicks the [`Request Submission`](Users_Guide/Data_Submission_Process.md#submit-to-the-gdc) button. Uploading the file can be performed with either the [GDC Data Transfer Tool](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool) or the [GDC API](https://docs.gdc.cancer.gov/API/Users_Guide/Getting_Started/). Other types of data files such as clinical supplements, biospecimen supplements, and pathology reports are uploaded to the GDC in the same way. Supported data file formats are listed at the GDC [Submitted Data Types and File Formats](https://gdc.cancer.gov/about-data/data-types-and-file-formats/submitted-data-types-and-file-formats) website.
 
 __GDC Data Transfer Tool:__ A file can be uploaded using its UUID (which can be retrieved from the GDC Submission Portal or API) once it is registered. 
 

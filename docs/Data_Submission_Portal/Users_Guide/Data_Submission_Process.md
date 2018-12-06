@@ -113,13 +113,13 @@ Once the user clicks on `REVIEW`, the project state will change to "REVIEW":
 
 ## Submit to the GDC
 
-When the project is ready for processing, the submitter will request to submit data to the GDC. If the project is not ready for processing, the project can be re-opened. Then the submitter will be able to upload more data to the project workspace.
+When the project is complete and ready for processing, the submitter will request to submit data to the GDC. If the project is not ready for processing, the project can be re-opened. Then the submitter will be able to upload more data to the project workspace.
 
 The `REQUEST SUBMISSION` button is available only if the project is in "REVIEW" state. At this point, the user can decide whether to re-open the project to upload more data or to request submission of the data to the GDC. When the project is in "REVIEW" the following panel appears on the dashboard:
 
 [![GDC Submission Submit Tab](images/GDC_Submission_Submit_Release_Submit_tab_2_v3.png)](images/GDC_Submission_Submit_Release_Submit_tab_2_v3.png "Click to see the full image.")
 
-Once the user submits data to the GDC, they cannot modify the submitted nodes and files while harmonization is underway.  Additional project data can be added during this period and will be considered a separate batch.  To process an additional batch the user must again review the data and select `Request Submission`.
+The Harmonization process is not automatic, so the user will need to press the `REQUEST SUBMISSION` button to indicate to internal teams and the automation system to begin data processing.  Once the user submits data to the GDC, they cannot modify the submitted nodes and files while harmonization is underway.  Additional project data can be added during this period and will be considered a separate batch.  To process an additional batch the user must again review the data and select `REQUEST SUBMISSION`.
 
 [![GDC Submission Submission Tab](images/GDC_SUBMIT_TO_GDC_v2.png)](images/GDC_SUBMIT_TO_GDC_v2.png "Click to see the full image.")
 
@@ -131,6 +131,8 @@ When the user clicks on the action `REQUEST SUBMISSION` on the dashboard, the fo
 After the user clicks on `SUBMIT VALIDATED DATA TO THE GDC`, the project state becomes "Submission Requested":
 
 [![GDC Submission Project State](images/GDC_Submission_Submit_Release_Project_State.png)](images/GDC_Submission_Submit_Release_Project_State_v2.png "Click to see the full image.")
+
+During this time, users can continue to sumbit more files to the project, but these will be considered a different batch in the project.
 
 The GDC requests that users submit their data to the GDC within six months from the first upload of data to the project workspace.
 
