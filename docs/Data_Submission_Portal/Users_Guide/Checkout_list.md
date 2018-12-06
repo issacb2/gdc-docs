@@ -1,4 +1,4 @@
-# Checklist Before Harmonizing Data
+# Pre-Harmonization Checklist
 
 The Harmonization step is __NOT__ an automatic process that occurs when data is uploaded to the GDC. The GDC performs batch processing of submitted data for Harmonization only after verifying that the submission is complete. 
 
