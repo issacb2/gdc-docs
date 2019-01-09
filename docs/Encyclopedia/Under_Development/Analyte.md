@@ -1,6 +1,6 @@
 # Analyte #
 ## Description ##
-An analyte any substance or sample being analysed.
+An analyte is any substance or sample that is being analysed.
 
 ## Overview ##
 An analyte is the specimen extracted for analysis from a portion using a specific extraction protocol.
