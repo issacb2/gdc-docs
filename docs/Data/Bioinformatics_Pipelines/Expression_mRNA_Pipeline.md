@@ -120,7 +120,7 @@ STAR
 --outSAMattrRGline <formatted RG line provided by wrapper>
 ```
 ```DR15Plus
-# STAR-2.6.0c
+# STAR-2.7.0f
 
 STAR \
 --readFilesIn <fastq_files> \
@@ -134,6 +134,7 @@ STAR \
 --chimJunctionOverhangMin 15 \
 --chimMainSegmentMultNmax 1 \
 --chimOutType Junctions SeparateSAMold WithinBAM SoftClip \
+--chimOutJunctionFormat 1 \
 --chimSegmentMin 15 \
 --genomeDir <genome_dir> \
 --genomeLoad NoSharedMemory \
