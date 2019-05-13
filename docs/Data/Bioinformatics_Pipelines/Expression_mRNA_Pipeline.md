@@ -196,7 +196,7 @@ htseq-count \
 <input_bam> \
 <gtf_file> > <counts_file>
 
-Note that the bam is re-sorted by read name with samtools before HTSeq is run. The RNA-Seq BAMs that are downloadable from the GDC portal are coordinate sorted. So if those are being processed, we suggesting using the "-r pos" argument in plance of "-r name".
+Note that the bam is re-sorted by read name with samtools before HTSeq is run. The RNA-Seq BAMs that are downloadable from the GDC portal are coordinate sorted. So if those are being processed, we suggesting using the "-r pos" argument in place of "-r name".
 ```
 
 ## mRNA Expression HT-Seq Normalization
