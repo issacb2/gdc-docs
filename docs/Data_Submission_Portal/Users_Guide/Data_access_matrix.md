@@ -6,6 +6,7 @@ Data submitters and downloaders have access to different files in the GDC system
 
 
 ## Types of Files
+
 ###Harmonized Data Files
 These are files produced by the GDC as part of our harmonization workflows.  Technically, this refers to any file node in the GDC Data Dictionary that has the flags `Submittable` = `FALSE` and `Downloadable` = `TRUE`.
 
@@ -16,6 +17,7 @@ These are files contributed by data submitters that are the input for our harmon
 These are files that are contributed by data submitters but are then directly shared with the community on the GDC  Data Portal.  This includes files like clinical and biospecimen supplements and slide images files.  Technically, this refers to any file node in the GDC Data Dictionary that has the flags `Submittable` = `TRUE` and `Downloadable` = `TRUE`.
 
 ## Types of Users
+
 ###Authenticated Submitter
 These are users that have submission access to a particular project in dbGaP.  Users with this access will have a check under `download` within their User Profile in the GDC.
 
