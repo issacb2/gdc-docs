@@ -2,7 +2,7 @@
 
 Data submitters and downloaders have access to different files in the GDC system at different times.  Below is a matrix that describes when particular types of files are available to download for specific types of users.  
 
-[![GDC Submission Dashboard Page](images/data_access_matrix.png)](images/data_access_matrix.png "Click to see the full image.")
+[![GDC Submission Dashboard Page](images/data_access_matrix_05202019.png)](images/data_access_matrix_05202019.png "Click to see the full image.")
 
 
 ## Types of Files
