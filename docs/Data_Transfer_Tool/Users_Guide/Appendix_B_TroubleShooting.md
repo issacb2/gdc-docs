@@ -7,23 +7,24 @@ The Data Transfer Tool does have two performance tuning options that are present
   --n (number of threads used)
   --http-chunk-size (can be used in large downloads)
 
-The "--n" option assists with assigning the number of threads to the download process.  The default is 4 and can't be lowered below three.  The --http-chunk-size setting can improve performance but we don't provide any hard settings due to the eclectic nature of client networks and their connections to the internet but instead we encourage clients to experiment with changing the default setting of 1048576 bytes to larger size ranges.       
+The "--n" option assists with assigning the number of threads to the download process.  The default is 4 and can not be lowered below three.  The --http-chunk-size setting can improve performance but we do not provide any hard settings due to the eclectic nature of client networks and their connections to the internet but instead we encourage clients to experiment with changing the default setting of 1048576 bytes to larger size ranges.       
 
 ##Manifest Streamlining
-Some clients have needed to create very large manifest files to satisfy the scope of their work.  Using very large manifest files can from time to time lead to the end user experiencing  network time outs or dropped connections due to network topologies, internet connections, or load on the client side systems.  To help mitigate these issues we recommended that clients breakup their manifest files into smaller chunks.  
+Some clients have needed to create very large manifest files to satisfy the scope of their work.  Using very large manifest files can from time to time lead to the end user experiencing  network time outs or dropped connections due to network topologies, internet connections, or load on the client side systems.  Network time out or dropped network connect can manifest as a hung or unresponsive download session. To help mitigate these issues we recommended that clients breakup their manifest files into smaller chunks.  
 
 ##Troubleshooting and Logging
 To avoid running into any older software bugs/conflicts we recommend to always use the latest version of the client whenever possible.  When experiencing download problems while using an access tokens try downloading a new token first before reporting it to the GDC helpdesk.  From time to time the GDC User Services Team will request that you run the command line application with the following flags { --debug --logfile } to assist with troubleshooting any issues that might have appeared.  These flags will run the application in debug mode and create a logfile file with the debug logs in it.  
 Example Usage:
->gdc-client download -m lung.manifest.txt -t token.file --debug --logfile logfile.txt
-
+```Debug-Logfile
+gdc-client download -m lung.manifest.txt -t token.file --debug --logfile logfile.txt
+```
 
 ##OS Compatibility with the Data Transfer Tool
-The Data transfer Tool is offered in three OS compatible versions; Mac OS, Windows, and Ubuntu Linux.  We have successfully tested the Ubuntu binary on CentOS 7.x and RHEL 7 and Scientific Linux 7 with the client but have had problems with CentOS 6.x and RHEL 6 and SL6.  To work around this problem we have asked users to roll their own client from our [github](https://github.com/NCI-GDC/gdc-client) repository with the assistance of an instruction document that we provide on request via the GDC Helpdesk.        
+The Data transfer Tool is offered in three OS compatible versions; Mac OS, Windows, and Ubuntu Linux.  We have successfully tested the Ubuntu binary on CentOS 7.x and RHEL 7 and Scientific Linux 7 with the client but have had problems with CentOS 6.x and RHEL 6 and SL6.  To work around this problem we have asked users to build their own client from our [github](https://github.com/NCI-GDC/gdc-client) repository with the assistance of an instruction document that we provide on request via the GDC Helpdesk.        
 
 
 ##Network Troubleshooting
-The GDC Helpdesk might request more network information to assist in diagnosing the problem.  The two tests they will request the end user to run are ping and traceroute (tracert on the windows plateform) against our api servers.  Please capture the output from these tests into a text file and attach it to the reply email.   
+The GDC Helpdesk might request more network information to assist in diagnosing the problem. Network problems can appears as dropped network connections or even a stalled application.  The two tests they will request the end user to run are ping and traceroute (tracert on the windows plateform) against our api servers.  Please capture the output from these tests into a text file and attach it to the reply email.   
 Examples:
 ```Ping
 >ping api.gdc.cancer.gov
