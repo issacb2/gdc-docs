@@ -1,4 +1,6 @@
-#Appendix_B_Troubleshooting
+#Troubleshooting Guide
+
+If you encounter issues using the Data Transfer Tool while download files please reference the section below helpful hints and recommendations.  
 
 ##Speed Performance During Download
 The Data Transfer Tool does have two performance tuning options that are presented during download operations.  The two options are presented below:
@@ -7,8 +9,8 @@ The Data Transfer Tool does have two performance tuning options that are present
 
 The "--n" option assists with assigning the number of threads to the download process.  The default is 4 and can't be lowered below three.  The --http-chunk-size setting can improve performance but we don't provide any hard settings due to the eclectic nature of client networks and their connections to the internet but instead we encourage clients to experiment with changing the default setting of 1048576 bytes to larger size ranges.       
 
-##Manifest Streamline
-Some clients have needed to create very large manifest files to satisfy the scope of their work.  Using very large manifest files can from time to time lead to the end user experiencing  network time outs due to network topologies, internet connections, or load on the client side systems.  To help mitigate these issues we recommended that clients breakup their manifest files into smaller chunks.  
+##Manifest Streamlining
+Some clients have needed to create very large manifest files to satisfy the scope of their work.  Using very large manifest files can from time to time lead to the end user experiencing  network time outs or dropped connections due to network topologies, internet connections, or load on the client side systems.  To help mitigate these issues we recommended that clients breakup their manifest files into smaller chunks.  
 
 ##Troubleshooting and Logging
 To avoid running into any older software bugs/conflicts we recommend to always use the latest version of the client whenever possible.  When experiencing download problems while using an access tokens try downloading a new token first before reporting it to the GDC helpdesk.  From time to time the GDC User Services Team will request that you run the command line application with the following flags { --debug --logfile } to assist with troubleshooting any issues that might have appeared.  These flags will run the application in debug mode and create a logfile file with the debug logs in it.  
@@ -22,14 +24,14 @@ The Data transfer Tool is offered in three OS compatible versions; Mac OS, Windo
 
 ##Network Troubleshooting
 The GDC Helpdesk might request more network information to assist in diagnosing the problem.  The two tests they will request the end user to run are ping and traceroute (tracert on the windows plateform) against our api servers.  Please capture the output from these tests into a text file and attach it to the reply email.   
-Example:
-Ping
+Examples:
+```Ping
 >ping api.gdc.cancer.gov
-PING api.gdc.cancer.gov (192.170.230.246): 56 data bytes
-64 bytes from 192.170.230.246: icmp_seq=0 ttl=249 time=4.235 ms
-64 bytes from 192.170.230.246: icmp_seq=1 ttl=249 time=4.783 ms
-
-Traceroute
+ PING api.gdc.cancer.gov (192.170.230.246): 56 data bytes
+ 64 bytes from 192.170.230.246: icmp_seq=0 ttl=249 time=4.235 ms
+ 64 bytes from 192.170.230.246: icmp_seq=1 ttl=249 time=4.783 ms
+```
+```Traceroute
 >traceroute api.gdc.cancer.gov
  traceroute to api.gdc.cancer.gov (192.170.230.246), 64 hops max, 52 byte packets
  1  h01-391-250-v1011.gw.uchicago.net (10.151.0.2)  4.595 ms  3.602 ms  3.322 ms
@@ -40,7 +42,7 @@ Traceroute
  6  192.170.224.97 (192.170.224.97)  4.003 ms  3.970 ms  6.260 ms
  7  lnk-g30-scidist-01.scidmz.uchicago.net (192.170.224.66)  4.530 ms  4.649 ms  6.021 ms
  8  192.170.230.246 (192.170.230.246)  4.158 ms  4.273 ms  5.134 ms
-
+```
 
 ##Common Error Codes
 This is a list of the most common error codes the DTT generates and their meaning
@@ -49,6 +51,5 @@ This is a list of the most common error codes the DTT generates and their meanin
 <li> Error: Max Retries Exceeded – network connect timeouts </li>
 <li>CryptographyDeprecationWarning – a warning that you should consider upgrading to a higher   
   version python – please upgrade to 2.7.x or higher.</li>
-<li>ERROR: An unexpected error has occurred during normal operation of the client -	This could</li>    
-  be a variety of problems and we ask you to contact our helpdesk.
+<li>ERROR: An unexpected error has occurred during normal operation of the client -	This could  be a variety of problems and we ask you to contact our helpdesk.</li>
 <li>ECONNRESET - network connection dropped.</li>
