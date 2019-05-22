@@ -10,9 +10,9 @@ The Data Transfer Tool does have two performance tuning options that are present
 The "--n" option assists with assigning the number of threads to the download process.  The default is 4 and can not be lowered below three.  The --http-chunk-size setting can improve performance but we do not provide any hard settings due to the eclectic nature of client networks and their connections to the internet but instead we encourage clients to experiment with changing the default setting of 1048576 bytes to larger size ranges.       
 
 ##Very Large Manifests
-Some clients have needed to create very large manifest files to satisfy the scope of their work.  Using very large manifest files can from time to time lead to the end user experiencing  network time outs or dropped connections due to network topologies, internet connections, or load on the client side systems.  Network time out or dropped network connect can manifest as a hung or unresponsive download session. To help mitigate these issues we recommended that clients breakup their manifest files into smaller chunks.  
+Some clients have needed to create very large manifest files to satisfy the scope of their work.  Using very large manifest files can from time to time lead to the end user experiencing  network time outs or dropped connections due to network topologies, internet connections, or load on client side systems.  Network time out or dropped network connect can manifest as a hung or unresponsive download session. To help mitigate these issues we recommended that clients breakup their manifest files into smaller chunks.  
 
-##General Tips 
+##General Tips
 To avoid running into older software bugs/conflicts we recommend you always use the latest version of the client whenever possible.  When experiencing download problems while using an access tokens try downloading a new token first before reporting it to the GDC helpdesk.  
 
 ##Logging
