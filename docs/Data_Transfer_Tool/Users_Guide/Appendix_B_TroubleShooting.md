@@ -3,19 +3,14 @@
 If you encounter issues when using the Data Transfer Tool for downloading files please reference the section below for helpful hints and recommendations.  
 
 ##Speed Performance During Download
-The Data Transfer Tool has two performance tuning options that are presented during download operations.  The first one is
-```Example
-  gdc-client download -m manifest.txt --n 12
-  --n (number of threads used)  
-```
+The Data Transfer Tool has two performance tuning options that are presented during download operations.  The two options are:
+
+  --n  
+
 The "--n" option assists with assigning the number of threads to the download process.  The default is 4 and can not be lowered below three threads.
 
+ --http-chunk-size
 
-The second option is:
-```Example
- gdc-client download -m manifest.txt --http-chunk-size 10485760
- --http-chunk-size (can be used in large downloads)
-```
 The "--http-chunk-size" setting can improve performance but we do not provide any hard settings due to the eclectic nature of client networks and their connections to the internet but instead encourage clients to experiment with changing the default setting of 1048576 bytes to larger size ranges.       
 
 ##Very Large Manifests
