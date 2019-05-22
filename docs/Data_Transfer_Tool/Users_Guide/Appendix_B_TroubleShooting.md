@@ -4,16 +4,19 @@ If you encounter issues when using the Data Transfer Tool for downloading files 
 
 ##Speed Performance During Download
 The Data Transfer Tool has two performance tuning options that are presented during download operations.  The first one is
-  ```First 
-  --n (number of threads used)```
+```Example
+  gdc-client download -m manifest.txt --n 12
+  --n (number of threads used)  
+```
+The "--n" option assists with assigning the number of threads to the download process.  The default is 4 and can not be lowered below three threads.
 
 
-
-The two options are:
-  --n (number of threads used)
-  --http-chunk-size (can be used in large downloads)
-
-The "--n" option assists with assigning the number of threads to the download process.  The default is 4 and can not be lowered below three threads.  The "--http-chunk-size" setting can improve performance but we do not provide any hard settings due to the eclectic nature of client networks and their connections to the internet but instead encourage clients to experiment with changing the default setting of 1048576 bytes to larger size ranges.       
+The second option is:
+```Example
+ gdc-client download -m manifest.txt --http-chunk-size 10485760
+ --http-chunk-size (can be used in large downloads)
+```
+The "--http-chunk-size" setting can improve performance but we do not provide any hard settings due to the eclectic nature of client networks and their connections to the internet but instead encourage clients to experiment with changing the default setting of 1048576 bytes to larger size ranges.       
 
 ##Very Large Manifests
 Some clients have needed to create very large manifest files to satisfy the scope of their work.  Using very large manifest files can from time to time lead to the end user experiencing  network time outs or dropped connections due to network topologies, internet connections, or load on client side systems.  Network time out or dropped network connect can manifest as a hung or unresponsive download session. To help mitigate these issues we recommended that clients breakup their manifest files into smaller chunks.  
