@@ -1,6 +1,6 @@
 # Data Access Matrix
 
-Data submitters and downloaders have access to different files in the GDC system at different times.  Below is a matrix that describes when particular types of files are available to download for specific types of users.  Green indicates the specified users has access.  Blue indicates the specified user does not have access.
+Data submitters and downloaders have access to different files in the GDC system at different times.  Below is a matrix that describes when particular types of files are available to download for specific types of users.  Green indicates the specified user has access.  Blue indicates the specified user does not have access.
 
 [![GDC Submission Dashboard Page](images/data_access_matrix_05202019.png)](images/data_access_matrix_05202019.png "Click to see the full image.")
 
@@ -14,7 +14,7 @@ These are files produced by the GDC as part of our harmonization workflows.  Tec
 These are files contributed by data submitters that are the input for our harmonization workflows.  These files are not made available in the GDC Data Portal.  Technically, this refers to any file node in the GDC Data Dictionary that has the flags `Submittable` = `TRUE` and `Downloadable` = `FALSE`.
 
 ###Raw Distributable Files
-These are files that are contributed by data submitters but are then directly shared with the community on the GDC  Data Portal.  This includes files like clinical and biospecimen supplements and slide images files.  Technically, this refers to any file node in the GDC Data Dictionary that has the flags `Submittable` = `TRUE` and `Downloadable` = `TRUE`.
+These are files that are contributed by data submitters but are then directly shared with the community on the GDC  Data Portal.  This includes files like clinical and biospecimen supplements and slide image files.  Technically, this refers to any file node in the GDC Data Dictionary that has the flags `Submittable` = `TRUE` and `Downloadable` = `TRUE`.
 
 ## Types of Users
 
