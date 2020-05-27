@@ -491,14 +491,18 @@ a.header-text-link {
 @media (min-width: 992px) {
   .bs-sidebar.affix,
   .bs-sidebar.affix-bottom {
-    width: 23%;
-    max-width: 300px;
+    width: 300px;
     margin-left: 11px;
+  }
+  .flex-container-md {
+    display: flex;
+  }
+  .toc-container {
+    flex: 0 0 340px;
   }
 }
 
 @media (max-width: 992px) {
-
   .navbar-default {
     height: auto;
   }
@@ -998,6 +1002,10 @@ footer a:visited {
 }
 
 /* Previous/Next Nav */
+
+.history-nav-control-container {
+  margin-top: 4rem;
+}
 
 .history-nav-control-container .btn {
   position: relative;
