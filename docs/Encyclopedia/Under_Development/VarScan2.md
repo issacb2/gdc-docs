@@ -1,11 +1,13 @@
 # VarScan2 #
+
 ## Description ##
+VarScan2 workflow generates simple somatic mutation variant calls from aligned BAM files in VCF format.
+
 ## Overview ##
-### Tools ###
+
 ## References ##
-1.
+VarScan2 workflow
 
 ## External Links ##
-* TBD
 
 Categories: Workflow Type
