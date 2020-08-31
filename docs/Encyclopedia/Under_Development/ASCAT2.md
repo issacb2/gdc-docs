@@ -9,7 +9,7 @@ Allele-specific copy number analysis of tumors (ASCAT) is a R package tool which
 ## References ##
 
 ## External Links ##
-ASCAT GitHub[https://github.com/Crick-CancerGenomics/ascat]
-Pubmed[https://pubmed.ncbi.nlm.nih.gov/20837533/]
+[ASCAT GitHub](https://github.com/Crick-CancerGenomics/ascat)
+[Pubmed](https://pubmed.ncbi.nlm.nih.gov/20837533/)
 
 Categories: Workflow
