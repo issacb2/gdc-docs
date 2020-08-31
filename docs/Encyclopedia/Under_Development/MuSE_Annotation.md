@@ -1,11 +1,13 @@
 # MuSE Annotation #
+
 ## Description ##
+This workflow Variant Effect Predictor tool (VEP) to filter the MuSE generated simple somatic variant WXS data.
+
 ## Overview ##
-### Tools ###
+
 ## References ##
-1.
+GDC VEP workflow
 
 ## External Links ##
-* TBD
 
 Categories: Workflow Type
