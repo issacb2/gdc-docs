@@ -1,11 +1,13 @@
 # SomaticSniper Annotation #
+
 ## Description ##
+This workflow filters SomaticSniper annotated simple somatic variation WXS data using the variant effect predictor (VEP) tool. 
+
 ## Overview ##
-### Tools ###
+
 ## References ##
-1.
+GDC VEP workflow
 
 ## External Links ##
-* TBD
 
 Categories: Workflow Type
