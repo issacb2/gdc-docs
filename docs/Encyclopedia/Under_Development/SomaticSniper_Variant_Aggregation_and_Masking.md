@@ -1,11 +1,13 @@
 # SomaticSniper Variant Aggregation and Masking #
-## Description ##
-## Overview ##
-### Tools ###
-## References ##
-1.
 
-## External Links ##
-* TBD
+## Description ##
+This workflow generates protected and open somatic MAFs derived from variant calls with SomaticSniper pipeline.
+
+## Overview ##
+
+## References ##
+GDC Somatic MAF workflow
+
+## External Links
 
 Categories: Workflow Type
