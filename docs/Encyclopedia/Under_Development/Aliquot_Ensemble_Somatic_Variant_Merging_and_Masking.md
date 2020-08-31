@@ -10,4 +10,4 @@ This workflow produces ensembled and merged aliquot level MAF files from multipl
 [Aliquot Level MAF Workflow](https://github.com/nci-gdc/aliquot-maf-cwl/blob/b54a1e3179120dd53d4ef723d0a63c8a01e1d7ce/workflows/ensemble_aliquot_maf_wf.cwl)
 ## External Links ##
 
-Categories: Workflow
+Categories: Workflow Type
