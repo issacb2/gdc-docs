@@ -7,10 +7,9 @@ Genomic Identification of Significant Targets in Cancer (GISTIC) is a tool to id
 GDC uses this workflow to generate gene-level copy number thresholded scores that support copy number visualization. This workflow is only run for TCGA, and later replaced by ASCAT derived integer copy number segments and gene-level copy numbers..
 
 ## References ##
-GDC Copy Number workflow
+1. [GDC Copy Number workflow](https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/CNV_Pipeline/)
 
 ## External Links ##
-GISTIC 2.0
-GISTIC documentation
+1. [GISTIC](https://bioinformaticshome.com/tools/cnv/descriptions/GISTIC.html)
 
 Categories: Workflow Type
