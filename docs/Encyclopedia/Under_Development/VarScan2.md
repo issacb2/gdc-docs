@@ -6,8 +6,8 @@ VarScan2 workflow generates simple somatic mutation variant calls from aligned B
 ## Overview ##
 
 ## References ##
-VarScan2 workflow
 
 ## External Links ##
+1. [VarScan](http://varscan.sourceforge.net/)
 
 Categories: Workflow Type
