@@ -6,7 +6,7 @@ This workflow filters SomaticSniper annotated simple somatic variation WXS data 
 ## Overview ##
 
 ## References ##
-GDC VEP workflow
+
 
 ## External Links ##
 
