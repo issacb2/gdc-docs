@@ -4,7 +4,7 @@
 MuSE is a variant-calling algorithm designed to detect somatic SNPs.
 
 ## Overview ##
-
+MuSE workflow generates simple somatic variant calls from aligned BAM data in VCF format files
 
 ### Tools ###
 ## References ##
@@ -12,6 +12,6 @@ MuSE is a variant-calling algorithm designed to detect somatic SNPs.
 and specificity in mutation calling from sequencing data. Genome Biology, 17(1), p.178.
 
 ## External Links ##
-* TBD
+1. [MuSE Tool](https://bioinformatics.mdanderson.org/public-software/muse/)
 
 Categories: Workflow Type
