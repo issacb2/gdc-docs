@@ -11,7 +11,7 @@ optimizing the alignments by running MarkDuplicates to ??????????????? and then 
 ### Tools ###
 ## References ##
 1. [GDC DNA-Seq Documentation](https://docs.gdc.cancer.gov/Data/Bioinformatics_Pipelines/DNA_Seq_Variant_Calling_Pipeline/)
-2. [GDC Cocleaning workflow] (https://github.com/nci-gdc/cocleaning-cwl)
+2. [GDC Cocleaning workflow](https://github.com/nci-gdc/cocleaning-cwl)
 
 ## External Links ##
 * N/A
