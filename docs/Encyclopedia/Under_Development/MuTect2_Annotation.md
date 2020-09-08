@@ -6,7 +6,7 @@ This workflow Variant Effect Predictor tool (VEP) to filter the MuTect2 generate
 ## Overview ##
 
 ## References ##
-GDC VEP workflow
+1. [GDC VEP workflow](https://github.com/nci-gdc/vep-cwl)
 
 ## External Links ##
 
