@@ -6,7 +6,7 @@ This workflow generates protected and open somatic MAFs derived from variant cal
 ## Overview ##
 
 ## References ##
-GDC Somatic MAF workflow
+
 
 ## External Links
 
